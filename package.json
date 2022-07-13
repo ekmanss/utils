@@ -1,0 +1,22 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "common utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekmanss/utils.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "ekmanss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ekmanss/utils/issues"
+  },
+  "homepage": "https://github.com/ekmanss/utils#readme"
+}
