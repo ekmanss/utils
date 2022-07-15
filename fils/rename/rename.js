@@ -3,7 +3,7 @@ const {readdirSync, renameSync} = require('fs');
 
 const path = require('path');
 const fs = require("fs");
-const url = path.join('/Users/linchuan/Pictures/wtf/');
+const url = path.join('./nfts/');
 
 let i = 0;
 
@@ -16,13 +16,7 @@ for (const oldFile of readdirSync(url, 'utf8')) {
     let oldName = item;
     // 新名称,根据需求修改名称，可以使用正则等等
     // 后缀可用之前的type 也可统一自定义
-    let newName = i + 'aa.png';
+    let newName = i + '.jpg';
     i++;
     renameSync(url + oldName, url + newName);
-
-    // const extension = extname(oldFile);
-    // const name = basename(oldFile, extension);
-    // if (name === 'old') {
-    //     renameSync(join(url, oldFile), join(url, 'new' + extension));
-    // }
 }
